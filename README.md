@@ -1,1 +1,1 @@
-# Example Mod
+# Modular Example Mod
