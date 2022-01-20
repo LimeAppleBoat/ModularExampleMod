@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "examplemod-crackers",
+  "version": "${version}",
+
+  "name": "Example Mod Crackers",
+  "description": "Crackers",
+  "authors": [
+    "LimeAppleBoat"
+  ],
+  "contributors": [
+  ],
+  "mixins": [
+    "examplemod-crackers.mixins.json"
+  ],
+  "contact": {
+    "sources": "https://github.com/LimeAppleBoat/ModularExampleMod/issues",
+    "issues": "https://github.com/LimeAppleBoat/ModularExampleMod/issues"
+  },
+
+  "entrypoints": {
+    "main": [
+      "com.jab125.example.crackers.ExampleModCrackers"
+    ]
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/examplemod-crackers/icon.png",
+
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "fabric": "*",
+    "minecraft": [
+      "1.18.x"
+    ],
+    "java": ">=17"
+  },
+  "custom": {
+    "examplemod:module-lifecycle": "stable"
+  }
+}

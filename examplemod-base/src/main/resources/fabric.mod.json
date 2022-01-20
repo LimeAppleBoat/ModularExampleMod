@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "examplemod-base",
+  "version": "${version}",
+
+  "name": "Example Mod Base",
+  "description": "The Base Module, all other modules depend on this.",
+  "authors": [
+    "LimeAppleBoat"
+  ],
+  "contributors": [
+  ],
+  "contact": {
+    "sources": "https://github.com/LimeAppleBoat/ModularExampleMod/issues",
+    "issues": "https://github.com/LimeAppleBoat/ModularExampleMod/issues"
+  },
+  "mixins": [
+    "examplemod-base.mixins.json"
+  ],
+
+  "entrypoints": {
+    "main": [
+      "com.jab125.example.base.ExampleModBase"
+    ]
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/examplemod-base/icon.png",
+
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "fabric": "*",
+    "minecraft": [
+      "1.18.x"
+    ],
+    "java": ">=17"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": {
+        "id": "examplemod",
+        "name": "Example Mod",
+        "description": "example mod, don't include any java classes in this mod, include it in the modules instead.",
+        "icon": "assets/examplemod/icon.png"
+      }
+    }
+  }
+}

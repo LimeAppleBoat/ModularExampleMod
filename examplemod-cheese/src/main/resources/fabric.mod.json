@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "examplemod-cheese",
+  "version": "${version}",
+
+  "name": "Example Mod Cheese",
+  "description": "Cheese",
+  "authors": [
+    "LimeAppleBoat"
+  ],
+  "contributors": [
+  ],
+  "contact": {
+    "sources": "https://github.com/LimeAppleBoat/ModularExampleMod/issues",
+    "issues": "https://github.com/LimeAppleBoat/ModularExampleMod/issues"
+  },
+  "mixins": [
+    "examplemod-cheese.mixins.json"
+  ],
+
+  "entrypoints": {
+    "main": [
+      "com.jab125.example.cheese.ExampleModCheese"
+    ]
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/examplemod-cheese/icon.png",
+
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "fabric": "*",
+    "minecraft": [
+      "1.18.x"
+    ],
+    "java": ">=17"
+  },
+  "custom": {
+    "examplemod:module-lifecycle": "stable"
+  }
+}

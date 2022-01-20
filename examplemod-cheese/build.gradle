@@ -1,0 +1,6 @@
+archivesBaseName = "examplemod-cheese"
+group = rootProject.group
+version = getSubprojectVersion(project)
+moduleDependencies(project, [
+        "examplemod-base"
+])

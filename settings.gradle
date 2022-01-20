@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+        mavenLocal()
+    }
+}
+// the mod name
+rootProject.name = "examplemod"
+include "examplemod-base"
+include "examplemod-cheese"
+include "examplemod-crackers"

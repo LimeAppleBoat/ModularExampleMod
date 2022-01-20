@@ -1,0 +1,6 @@
+archivesBaseName = "examplemod-crackers"
+group = rootProject.group
+version = getSubprojectVersion(project)
+moduleDependencies(project, [
+        "examplemod-base"
+])
